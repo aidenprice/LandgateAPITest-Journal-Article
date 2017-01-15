@@ -17,6 +17,12 @@ Response to Feedback.md
 LandgateAPITest Final Report Structure.md
 Graphics\Generalised Workflow Chart.txt
 Literature Review\
+Excluded From Git Folder\
+
+
+# Dropbox files
+.dropbox
+www.dropbox.com.url
 
 
 # Standard Mac gitignore files
@@ -25,7 +31,8 @@ Literature Review\
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon\r\r
+Icon?
 
 
 # Thumbnails
