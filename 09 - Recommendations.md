@@ -6,6 +6,6 @@ Esri JSON is not the same format as the open standard GeoJSON served by GME and 
 
 The latest version of ArcGIS Server (10.4) can supply GeoJSON in response to a `Query` request {Anonymous:3DxToBXL}. Landgate employs the previous generation ArcGIS Server, 10.3.1 for their production server infrastructure {Anonymous:81mWLEl8}.
 
-Should older OGC servers be decommissioned Landgate could offer WFS services from their current ArcGIS servers. This would allow them to continue to offer OGC standard GML despite changes to underlying server software.
+~~Should older OGC servers be decommissioned Landgate could offer WFS services from their current ArcGIS servers. This would allow them to continue to offer OGC standard GML despite changes to underlying server software.~~
 
-Any recommendations for improving mobile suitability metrics (response time frequency distributions and reference check percentage) would require detailed discussion between Landgate and their internal and external stakeholders. Given such, these recommendations will not be addressed in this writing.
+~~Any recommendations for improving mobile suitability metrics (response time frequency distributions and reference check percentage) would require detailed discussion between Landgate and their internal and external stakeholders. Given such, these recommendations will not be addressed in this writing.~~
