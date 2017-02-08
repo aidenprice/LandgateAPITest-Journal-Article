@@ -13,4 +13,3 @@ Deploying LandgateAPITest against SLIP's GME, OGC and Esri spatial web service e
 The end result is a set of mobile suitability metrics. The frequency distribution of response time across a number of web service request types demonstrates performance. The percentage of requests with inconsistent response data compared to a reference measures quality.
 
 Providing these metrics to the SLIP team will aid Landgate and WALIS in objectively measuring progress towards their goal of enabling access to location information.
-
