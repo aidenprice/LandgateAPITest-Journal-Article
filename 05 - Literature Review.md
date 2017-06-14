@@ -6,9 +6,9 @@ Web services are widely studied {Tahir:2013jd, Qiu:2015eq, ElIoiniNabil:2015us}.
 
 Hamas, Saad and Abed {\*Hamad:2010tr} compared the performance of SOAP and REST APIs on mobile devices. The measured criteria were response time and transmission size which predictably favoured REST interfaces.
 
-Their experiment design emulated a mobile device on a desktop computer; further, they restricted the simulated mobile network speed. These are useful controls in an experiment designed with a very clear aim of finding which service is faster. Real world complications such as heavy network traffic or poor signal are not addressed as a factor in the outcome. As an example, SOAP's WS-ReliableMessaging protocol may reduce overall transfer time in areas with weak signal by minimising the number of failed message attempts.
+Their experiment design emulated a mobile device on a desktop computer; further, they restricted the simulated mobile network speed. These are useful controls in an experiment designed with a very clear aim of finding which service is faster. Real world complications such as heavy network traffic or poor signal were not addressed as a factor in the outcome. As an example, SOAP's WS-ReliableMessaging protocol may reduce overall transfer time in areas with weak signal by minimising the number of failed message attempts.
 
-Tian et al. {\*Tian:2004cb} designed a server-client system that could optionally compress responses to save the client's download limit or skip compression when the server is under heavy load to minimise timed out requests. Working in the pre-smartphone era the team simulated an iPAQ Pocket PC, emulating the device on a Pentium III laptop. The laptop  was connected to the server via Wi-Fi, Bluetooth or a simulated mobile network. To simulate the increased latency and slower connection speed of a GPRS network, they introduced another server that throttled network speed by artificially delaying messages.
+Tian et al. {\*Tian:2004cb} designed a server-client system that could optionally compress responses to save the client's download limit or skip compression when the server is under heavy load to minimise timed out requests. Working in the pre-smartphone era the team simulated an iPAQ Pocket PC, emulating the device on a Pentium III laptop. The laptop was connected to the server via Wi-Fi, Bluetooth or a simulated mobile network. To simulate the increased latency and slower connection speed of a GPRS network, they introduced another server that throttled network speed by artificially delaying messages.
 
 Davis, Kimo and Duarte-Figueiredo {\*Davis:2009hf} focussed on OGC Web Map Service (WMS) optimisation for mobile devices. They elaborated a service that combined the multi-layer composition of WMS with the mobile device response speed of AJAX-based web maps such as Google Maps.
 
@@ -16,7 +16,7 @@ Their experiment implemented the proposed service and interacted with it from a 
 
 Fowler, Hameseder and Peterson {\*Fowler:2012bn} built a custom iPhone application to test the performance of SOAP and REST versions of a public transportation web service in Hamburg over a typical working day. They measured response time, data serialisation/deserialisation time and response size on the device itself and returned the results to their own web service. Simple and detailed messages of significantly different response size controlled whether response time was dependent upon message size. The results were given as mean and standard deviation, descriptive statistics without discussion of error responses.
 
-Fowler, Hameseder and Peterson's {\*Fowler:2012bn} methodology called for the mobile user to remain "fixed" while requesting and receiving the response. This is interpreted to mean stationary, contrary behaviour for mobile device use. There are  many situations in which a mobile user would be active and moving while concurrently requesting data from a web service.
+Fowler, Hameseder and Peterson's {\*Fowler:2012bn} methodology called for the mobile user to remain "fixed" while requesting and receiving the response. This is interpreted to mean stationary, contrary behaviour for mobile device use. There are many situations in which a mobile user would be active and moving while concurrently requesting data from a web service.
 
 Provisioning web services from a mobile device faces similar network and device limitations as consuming a service from a mobile device. Nguyen, Jørstad and van Thanh {\*Nguyen:2008jt} explored web service performance on an emulated mobile device. While investigating the influence of varied simulated mobile network speeds, they concluded that testing on an actual device would provide ideal settings for their network simulation. Indeed, the subsequent experiment showed considerable differences between emulated and real network speed influence on web service performance. Even after modifying their simulated network speed to approximate real world network speed the difference was significant.
 
@@ -28,7 +28,7 @@ Orion, Marco and French {\*Oriol:2014kq} reviewed the state of the art in qualit
 
 ### Web Service Evaluation
 
-The OASIS Web Services Quality Factors {Kim:2012wm} defined six quality factors with 28 sub-categories.
+The OASIS Web Services Quality Factors {Kim:2012wm} defined six quality factors with 28 subcategories.
 
     1.    Business Value Quality - the value arising from using a web service as compared to the cost.
     2.    Service Level Measurement Quality - the service responsiveness from a client's point of view, including time and success criteria.
@@ -49,7 +49,7 @@ Only Service Level Measurement Quality is within the purview of this study. Its 
     4.    Accessibility - the probability of the web service can be reached when the system is operational, quantified as the number of received acknowledgement messages divided by the total number of requests.
     5.    Successability - the probability of receiving a successful response to a web service request, the number of responses divided by the number of requests.
 
-This research proposes to track these factors through a series of frequent but irregularly timed tests from a mobile device deployed in situations common to the mobile network milieu.
+This research proposes to track a subset of these factors through a series of frequent but irregularly timed tests from a mobile device deployed in situations common to the mobile network milieu.
 
 ### Acceptance
 
