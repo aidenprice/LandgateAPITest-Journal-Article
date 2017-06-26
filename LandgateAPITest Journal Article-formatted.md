@@ -34,50 +34,50 @@ The testing suite provides a measurement set as its outputs, frequency distribut
 
 ### Web Services
 
-Web services enable interaction between computer systems over a network {Anonymous:bRhwymPh}. One system may call on another to provide data or a service without requiring a human user to mediate the interaction. Mobile devices have limited processing power and storage available, so off-device storage and processing empowers on-device applications.
+Web services enable interaction between computer systems over a network [1]. One system may call on another to provide data or a service without requiring a human user to mediate the interaction. Mobile devices have limited processing power and storage available, so off-device storage and processing empowers on-device applications.
 
-Service Oriented Architectures (SOA) is a principle of software design that aims to compose a software product from loosely coupled, and hence replaceable, components {Endo:2010wf}. Designers commonly employ this pattern as a method for distributed computing {Palacios:2011eo}. 
+Service Oriented Architectures (SOA) is a principle of software design that aims to compose a software product from loosely coupled, and hence replaceable, components [2]. Designers commonly employ this pattern as a method for distributed computing [3].
 
-Representational State Transfer (REST) services are easy to develop and consume {Castillo:2011ve}. The adoption of RESTful services has led to an explosion of data available on the web, particularly with mobile applications in mind as end consumers.
+Representational State Transfer (REST) services are easy to develop and consume [4]. The adoption of RESTful services has led to an explosion of data available on the web, particularly with mobile applications in mind as end consumers.
 
-REST services use HTTP/HTTPS as their transport layer {Castillo:2011ve}. This permits them to employ the standard HTTP response codes to indicate the success of a request. Briefly, such codes include the 200 series for success, 300 codes for resources moved elsewhere, 400 series for bad requests from the client and the 500 series for server errors. 
+REST services use HTTP/HTTPS as their transport layer [4]. This permits them to employ the standard HTTP response codes to indicate the success of a request. Briefly, such codes include the 200 series for success, 300 codes for resources moved elsewhere, 400 series for bad requests from the client and the 500 series for server errors.
 
 ### Spatial Web Services
 
 #### Open Geospatial Consortium Web Map Service and Web Feature Service
 
-The Open Geospatial Consortium (OGC) is an international group of industry, government, academic, and community representatives whose aim is to improve business processes through the integration of location data {Reed:2011kt}. 
+The Open Geospatial Consortium (OGC) is an international group of industry, government, academic, and community representatives whose aim is to improve business processes through the integration of location data [5].
 
-A Web Map Service (WMS) composes an image file from from server stored vector and raster layers in response to a request in a URL. A Web Feature Service (WFS) returns geographic vector data in GML (Geographic Markup Language, a derivative of XML). It is a more complex and capable service than WMS. If fully deployed, WFS grants external users full create, read, update, and delete (CRUD) access to a geographic database {Vretanos:2005ut}.
+A Web Map Service (WMS) composes an image file from from server stored vector and raster layers in response to a request in a URL. A Web Feature Service (WFS) returns geographic vector data in GML (Geographic Markup Language, a derivative of XML). It is a more complex and capable service than WMS. If fully deployed, WFS grants external users full create, read, update, and delete (CRUD) access to a geographic database [6].
 
 #### Google Maps Engine
 
-Google Inc.'s Google Maps Engine (GME) service enabled the creation of more sophisticated web mapping services on top of the Google Maps interface. Whereas the familiar Google Maps application only allowed one or two additional map layers to be displayed, Google Maps Engine could host many hundreds of datasets in the cloud and perform multi-layer geographic analysis {Anonymous:s3eShq99}.
+Google Inc.'s Google Maps Engine (GME) service enabled the creation of more sophisticated web mapping services on top of the Google Maps interface. Whereas the familiar Google Maps application only allowed one or two additional map layers to be displayed, Google Maps Engine could host many hundreds of datasets in the cloud and perform multi-layer geographic analysis [7].
 
-In a commercial decision, Google Inc. announced the deprecation of the GME API on the 29th of January 2015 {Anonymous:2015tg}. Google shut the service on the 29th of January 2016.
+In a commercial decision, Google Inc. announced the deprecation of the GME API on the 29th of January 2015 [8]. Google shut the service on the 29th of January 2016.
 
 #### Esri ArcGIS for Server and ArcGIS REST API
 
-ArcGIS for Server is Esri's enterprise level product for intra/Internet GIS and provisioning web services {Anonymous:BHtz-GD9}.
+ArcGIS for Server is Esri's enterprise level product for intra/Internet GIS and provisioning web services [9].
 
-The ArcGIS REST API exposes ArcGIS for Server data and functions as web services. This modern API has been fully developed since 2010 {Anonymous:hoTu0aor}. ArcGIS for Server's age means it is also capable of supporting older web service standards such as SOAP.
+The ArcGIS REST API exposes ArcGIS for Server data and functions as web services. This modern API has been fully developed since 2010 [10]. ArcGIS for Server's age means it is also capable of supporting older web service standards such as SOAP.
 
 ### Landgate
 
-Landgate is the statutory authority given charge of maintaining the state's land and property information system {Anonymous:2004tv}. The organisation is the inheritor of the mandate of various incarnations of the Department of Lands and Surveys, dating back to the original Survey Office in the 19th Century.
+Landgate is the statutory authority given charge of maintaining the state's land and property information system [11]. The organisation is the inheritor of the mandate of various incarnations of the Department of Lands and Surveys, dating back to the original Survey Office in the 19th Century.
 
-Landgate's role incorporates managing property ownership and transfer records, as well as property valuations to government agencies {Anonymous:x1iQOCOB}.
+Landgate's role incorporates managing property ownership and transfer records, as well as property valuations to government agencies [12].
 
 ![Organisation of Landgate and WALIS](Graphics\Landgate WALIS & SLIP Org Chart.png)
 Figure 1.1 - Organisation of Landgate and WALIS, adapted from Location Information Strategy Program Coordination Team, 2012
 
-The Western Australian Land Information System (WALIS) is a partnership between government agencies, the private sector, academia, and the community. Their aim is to improve access to location information for the betterment of the Western Australian community {LocationInformationStrategyProgramCoordinationTeam:2012te}.
+The Western Australian Land Information System (WALIS) is a partnership between government agencies, the private sector, academia, and the community. Their aim is to improve access to location information for the betterment of the Western Australian community [13].
 
 The Shared Location Information Platform (SLIP) is WALIS's spatial data portal, the Western Australian government's Spatial Data Infrastructure (SDI), managed by Landgate. The portal presents datasets owned and maintained by authoritative agencies, standardises data formats and simplifies access.
 
-SLIP Future is WALIS's programme to revamp the original SLIP Enabler portal and infrastructure {Anonymous:2014ww}. The older infrastructure was deemed incapable of handling projected usage. WALIS built a new platform around Google's Software as a Service (SaaS) Google Maps Engine (GME). The new environment offered significant advantages in reliability, scalability, and feature set {Anonymous:2014ww}.
+SLIP Future is WALIS's programme to revamp the original SLIP Enabler portal and infrastructure [14]. The older infrastructure was deemed incapable of handling projected usage. WALIS built a new platform around Google's Software as a Service (SaaS) Google Maps Engine (GME). The new environment offered significant advantages in reliability, scalability, and feature set [14].
 
-In January 2015, Google announced the deprecation of Google Maps Engine {SLIPFuture:2015uc}. Further, they planned to shut the service entirely by the end of January 2016 {Anonymous:2015tg}. Landgate and WALIS were left in search of a new provider for the SLIP Future programme. Esri aggressively sought the business of GME refugee organisations {Anonymous:7YAzB1Ym} offering free software replacements and membership to business partnership programs. In July 2015, Landgate selected Esri's ArcGIS Server and Portal as the replacement for GME {Anonymous:2015uc}. Web services offering datasets in Esri's ArcGIS REST APIs replaced GME's API through a transition period through the end of 2015 and beginning of 2016.
+In January 2015, Google announced the deprecation of Google Maps Engine [15]. Further, they planned to shut the service entirely by the end of January 2016 [8]. Landgate and WALIS were left in search of a new provider for the SLIP Future programme. Esri aggressively sought the business of GME refugee organisations [16] offering free software replacements and membership to business partnership programs. In July 2015, Landgate selected Esri's ArcGIS Server and Portal as the replacement for GME [17]. Web services offering datasets in Esri's ArcGIS REST APIs replaced GME's API through a transition period through the end of 2015 and beginning of 2016.
 
 Landgate's mandate to provide spatial data services through SLIP has been somewhat derailed by the deprecation of Google Maps Engine. The work presented within looks at developing a testing suite to aid Landgate and WALIS in measuring their success against SLIP's goals. Related work, explored below, is taken as a guide to design and implementation, detailed in the Materials and Methods section.
 
@@ -85,40 +85,40 @@ Landgate's mandate to provide spatial data services through SLIP has been somewh
 
 ### Related Work
 
-Web services are widely studied {Tahir:2013jd, Qiu:2015eq, ElIoiniNabil:2015us}. However, the scope of applications for web services is broad. There are, therefore, few studies that examine the intersection of geographic web service performance, mobile device context and a single, state-level spatial data infrastructure. Following are a cross-section of papers with aims partially aligned to those of this work.
+Web services are widely studied [18, 19, 20]. However, the scope of applications for web services is broad. There are, therefore, few studies that examine the intersection of geographic web service performance, mobile device context and a single, state-level spatial data infrastructure. Following are a cross-section of papers with aims partially aligned to those of this work.
 
-Hamas, Saad, and Abed {*Hamad:2010tr} compared the performance of SOAP and REST APIs on mobile devices. The measured criteria were response time and transmission size which predictably favoured REST interfaces.
+Hamas, Saad, and Abed [21] compared the performance of SOAP and REST APIs on mobile devices. The measured criteria were response time and transmission size which predictably favoured REST interfaces.
 
 Their experiment design emulated a mobile device on a desktop computer; further, they restricted the simulated mobile network speed. These are useful controls in an experiment designed with a very clear aim of finding which service is faster. Real world complications such as heavy network traffic or poor signal were not addressed as a factor in the outcome. As an example, SOAP's WS-ReliableMessaging protocol may reduce overall transfer time in areas with weak signal by minimising the number of failed message attempts.
 
-Tian et al. {*Tian:2004cb} designed a server-client system that could optionally compress responses to save the client's download limit or skip compression when the server is under heavy load to minimise timed out requests. Working in the pre-smartphone era the team simulated an iPAQ Pocket PC, emulating the device on a Pentium III laptop. The laptop was connected to the server via Wi-Fi, Bluetooth or a simulated mobile network. To simulate the increased latency and slower connection speed of a GPRS network, they introduced another server that throttled network speed by artificially delaying messages.
+Tian et al. [22] designed a server-client system that could optionally compress responses to save the client's download limit or skip compression when the server is under heavy load to minimise timed out requests. Working in the pre-smartphone era the team simulated an iPAQ Pocket PC, emulating the device on a Pentium III laptop. The laptop was connected to the server via Wi-Fi, Bluetooth or a simulated mobile network. To simulate the increased latency and slower connection speed of a GPRS network, they introduced another server that throttled network speed by artificially delaying messages.
 
-Davis, Kimo, and Duarte-Figueiredo {*Davis:2009hf} focussed on OGC Web Map Service (WMS) optimisation for mobile devices. They elaborated a service that combined the multi-layer composition of WMS with the mobile device response speed of AJAX-based web maps such as Google Maps.
+Davis, Kimo, and Duarte-Figueiredo [23] focussed on OGC Web Map Service (WMS) optimisation for mobile devices. They elaborated a service that combined the multi-layer composition of WMS with the mobile device response speed of AJAX-based web maps such as Google Maps.
 
 Their experiment implemented the proposed service and interacted with it from a custom application deployed on a Nokia N95. Given the focus on minimising data sent and received from the device, the results vindicated their hypothesis. Unfortunately, the team declined to study response time results due to "severe fluctuations" that they attributed to an overcrowded network. They concluded that smaller volumes of transmitted data would result in faster map interaction overall.
 
-Fowler, Hameseder, and Peterson {*Fowler:2012bn} built a custom iPhone application to test the performance of SOAP and REST versions of a public transportation web service in Hamburg over a typical working day. They measured response time, data serialisation/deserialisation time and response size on the device itself and returned the results to their own web service. Simple and detailed messages of significantly different response size controlled whether response time was dependent upon message size. The results were given as mean and standard deviation, descriptive statistics without discussion of error responses.
+Fowler, Hameseder, and Peterson [24] built a custom iPhone application to test the performance of SOAP and REST versions of a public transportation web service in Hamburg over a typical working day. They measured response time, data serialisation/deserialisation time and response size on the device itself and returned the results to their own web service. Simple and detailed messages of significantly different response size controlled whether response time was dependent upon message size. The results were given as mean and standard deviation, descriptive statistics without discussion of error responses.
 
-Fowler, Hameseder, and Peterson's {*Fowler:2012bn} methodology called for the mobile user to remain "fixed" while requesting and receiving the response. This is interpreted to mean stationary, contrary behaviour for mobile device use. There are many situations in which a mobile user would be active and moving while concurrently requesting data from a web service.
+Fowler, Hameseder, and Peterson's [24] methodology called for the mobile user to remain "fixed" while requesting and receiving the response. This is interpreted to mean stationary, contrary behaviour for mobile device use. There are many situations in which a mobile user would be active and moving while concurrently requesting data from a web service.
 
-Provisioning web services from a mobile device faces similar network and device limitations as consuming a service from a mobile device. Nguyen, Jørstad and van Thanh {*Nguyen:2008jt} explored web service performance on an emulated mobile device. While investigating the influence of varied simulated mobile network speeds, they concluded that testing on an actual device would provide ideal settings for their network simulation. Indeed, the subsequent experiment showed considerable differences between emulated and real network speed influence on web service performance. Even after modifying their simulated network speed to approximate real world network speed the difference was significant.
+Provisioning web services from a mobile device faces similar network and device limitations as consuming a service from a mobile device. Nguyen, Jørstad and van Thanh [25] explored web service performance on an emulated mobile device. While investigating the influence of varied simulated mobile network speeds, they concluded that testing on an actual device would provide ideal settings for their network simulation. Indeed, the subsequent experiment showed considerable differences between emulated and real network speed influence on web service performance. Even after modifying their simulated network speed to approximate real world network speed the difference was significant.
 
 ### Web Service Quality and Discovery
 
-Automated web service discovery aims to support semantic web development {Palacios:2011eo, DMello:2010hi}. An application should be able to bind a web service without supervision from the end user. How then, though, should the application choose which web service to employ from the multitude available, also without requiring user intervention. The investigators below discuss systematically and automatically applied quality metrics as a basis for deciding which web services should be bound.
+Automated web service discovery aims to support semantic web development [26, 3]. An application should be able to bind a web service without supervision from the end user. How then, though, should the application choose which web service to employ from the multitude available, also without requiring user intervention. The investigators below discuss systematically and automatically applied quality metrics as a basis for deciding which web services should be bound.
 
-Orion, Marco, and French {*Oriol:2014kq} reviewed the state of the art in quality of service models for web services, surveying 65 papers written between 2001 and 2012. They showed that most researchers were assessing web services quality regarding availability (essentially the probability a request will receive a response) with 94% of surveyed papers defining the metric. Response time was second place at 83% coverage and accuracy third with 62%.
+Orion, Marco, and French [27] reviewed the state of the art in quality of service models for web services, surveying 65 papers written between 2001 and 2012. They showed that most researchers were assessing web services quality regarding availability (essentially the probability a request will receive a response) with 94% of surveyed papers defining the metric. Response time was second place at 83% coverage and accuracy third with 62%.
 
 ### Web Service Evaluation
 
-The OASIS Web Services Quality Factors {Kim:2012wm} defined six quality factors with 28 subcategories.
+The OASIS Web Services Quality Factors [28] defined six quality factors with 28 subcategories.
 
-    1.    Business Value Quality - the value arising from using a web service as compared to the cost.
-    2.    Service Level Measurement Quality - the service responsiveness from a client's point of view, including time and success criteria.
-    3.    Interoperability Quality - the degree to which a service conforms to appropriate standards.
-    4.    Business Processing Quality - the service's reliability for business use considering transmission integrity and integration with other processes.
-    5.    Manageability Quality - management processes to ensure web service quality.
-    6.    Security Quality - the service's ability to prevent intrusion, interception or destruction of the service itself or its messages.
+1. Business Value Quality - the value arising from using a web service as compared to the cost.
+1. Service Level Measurement Quality - the service responsiveness from a client's point of view, including time and success criteria.
+1. Interoperability Quality - the degree to which a service conforms to appropriate standards.
+1. Business Processing Quality - the service's reliability for business use considering transmission integrity and integration with other processes.
+1. Manageability Quality - management processes to ensure web service quality.
+1. Security Quality - the service's ability to prevent intrusion, interception or destruction of the service itself or its messages.
 
 Taken all together these represent all factors that affect a client's decision to consume a web service.
 
@@ -126,21 +126,21 @@ The scope of this study is limited to those aspects of Landgate's service that a
 
 Only Service Level Measurement Quality is within the purview of this study. Its sub-categories include:
 
-    1.    Response Time - the time interval between the transmission of a request and the receipt of a response. The total time is composed of the time taken for the client to compose the request and decompose the response plus the network transmission time to and from the server plus the time taken for the server to process the request and formulate a response.
-    2.    Maximum Throughput - the maximum number of requests a service can reliably respond to in a unit of time.
-    3.    Availability - the proportion of time the server is operational, the complement of service downtime per measured time.
-    4.    Accessibility - the probability of the web service can be reached when the system is operational, quantified as the number of received acknowledgement messages divided by the total number of requests.
-    5.    Successability - the probability of receiving a successful response to a web service request, the number of responses divided by the number of requests.
+1. Response Time - the time interval between the transmission of a request and the receipt of a response. The total time is composed of the time taken for the client to compose the request and decompose the response plus the network transmission time to and from the server plus the time taken for the server to process the request and formulate a response.
+1. Maximum Throughput - the maximum number of requests a service can reliably respond to in a unit of time.
+1. Availability - the proportion of time the server is operational, the complement of service downtime per measured time.
+1. Accessibility - the probability of the web service can be reached when the system is operational, quantified as the number of received acknowledgement messages divided by the total number of requests.
+1. Successability - the probability of receiving a successful response to a web service request, the number of responses divided by the number of requests.
 
 This research proposes to track a subset of these factors through a series of frequent but irregularly timed tests from a mobile device deployed in situations common to the mobile network milieu.
 
 ### Acceptance
 
-Park and Ohm {*Park:2014jp} surveyed mobile map users to construct a technology acceptance model to investigate users' acceptance of mobile mapping applications. The research question sought to understand what factors influenced user's intention to use such mapping applications. They found two main determinants of users' attitude towards a mobile mapping service and thence their intention to make use of the service; perceived locational accuracy and service and display quality.
+Park and Ohm [29] surveyed mobile map users to construct a technology acceptance model to investigate users' acceptance of mobile mapping applications. The research question sought to understand what factors influenced user's intention to use such mapping applications. They found two main determinants of users' attitude towards a mobile mapping service and thence their intention to make use of the service; perceived locational accuracy and service and display quality.
 
-Park and Ohm {*Park:2014jp} defined perceived locational accuracy as how well users envision their location in the map, essentially the degree to which mapped features correspond with a user's mental model of the world and where they are in it. This study considers that requests for map data that fail due to errors or return mismatching or incomplete data are a direct hindrance to user acceptance. A mobile map application that featured missing map tiles or incomplete geographic feature data prevents a user from determining their location in the map with respect to their real world situation.
+Park and Ohm [29] defined perceived locational accuracy as how well users envision their location in the map, essentially the degree to which mapped features correspond with a user's mental model of the world and where they are in it. This study considers that requests for map data that fail due to errors or return mismatching or incomplete data are a direct hindrance to user acceptance. A mobile map application that featured missing map tiles or incomplete geographic feature data prevents a user from determining their location in the map with respect to their real world situation.
 
-Park and Ohm's {*Park:2014jp} definition of service and display quality is an extension of earlier general definitions of service quality; "the degree of general performance of an information system and related services." As discussed above, quality as measurable in the context of this work includes response time and likelihood of request success.
+Park and Ohm's [29] definition of service and display quality is an extension of earlier general definitions of service quality; "the degree of general performance of an information system and related services." As discussed above, quality as measurable in the context of this work includes response time and likelihood of request success.
 
 A LandgateAPITest suite campaign, explained in the following section, produces mobile suitability metrics aligned with both factors as its outputs.
 
@@ -153,9 +153,9 @@ The mobile application user chooses to initiate a test against the Landgate serv
 Testing proceeds in a cycle:
 
 1. First, a LocationTest determines the device's latitude and longitude
-2. A NetworkTest queries the device's connection to the mobile network
-3. A PingTest checks the ping time to a well-known endpoint other than Landgate
-4. Then the device sends one of the pre-ordered requests to Landgate's servers and captures the response data in an EndpointTest.
+1. A NetworkTest queries the device's connection to the mobile network
+1. A PingTest checks the ping time to a well-known endpoint other than Landgate
+1. Then the device sends one of the pre-ordered requests to Landgate's servers and captures the response data in an EndpointTest.
 
 The cycle repeats until there are no more EndpointTests in the queue.
 
@@ -199,7 +199,7 @@ A LocationTest acquires a latitude and longitude value in the WGS84 coordinate r
 
 A NetworkTest queries the iOS device for the properties of its network connection. Each NetworkTest records the mobile network provider (called carrier in mobile device parlance) and the class of the mobile network (for example, EDGE, HSDPA, LTE).
 
-As LandgateAPITest cannot directly test network connection speed, a proxy is taken in its place. A PingTest sends a HEAD request to www.google.com.au and measures the time until it receives a response. 
+As LandgateAPITest cannot directly test network connection speed, a proxy is taken in its place. A PingTest sends a HEAD request to www.google.com.au and measures the time until it receives a response.
 
 ReferenceObjects hold the correct response data from the Landgate server for each request. These exemplar responses were requested and stored on the 5th of April, 2016. This postdates GME's replacement. References for GME requests were stored in April 2016 from the first test responses in December 2015. Dynamic parts of responses were excluded from the final ReferenceObject, for example, any date or time value that changes between requests.
 
@@ -226,7 +226,7 @@ The web application should analyse EndpointTest results and not just represent t
 
 ### Test Device Hardware
 
-All tests were performed on an Apple iPhone 6S, model A1688 (a.k.a. iPhone8,1), with 64GB of storage. The standard device comes with a range of mobile radios across many bands; LTE, HSDPA, CDMA, GSM, EDGE, Wi-Fi radios a/b/g/n/ac and GPS and GLONASS receivers {Anonymous:2016uf}.
+All tests were performed on an Apple iPhone 6S, model A1688 (a.k.a. iPhone8,1), with 64GB of storage. The standard device comes with a range of mobile radios across many bands; LTE, HSDPA, CDMA, GSM, EDGE, Wi-Fi radios a/b/g/n/ac and GPS and GLONASS receivers [30].
 
 Table 3.1 - Test device characteristics captured by LandgateAPITest iOS application
 |                  |                             |
@@ -353,9 +353,9 @@ The various requests are subcategorised by their test name, a general descriptio
 ![Percentage of Vectors by test type](Graphics/Charts/Test Name Pie Chart.png)
 Figure 4.4 - Percentage of Vectors by test type N.B. smaller categories removed for clarity
 
-Aligned with Fowler, Hameseder, and Peterson's {*Fowler:2012bn} experimental control showing that response data size affects response time, LandgateAPITest requests "Small" and "Big" responses. Small requests are either for a few features in GML or JSON or an image only a few tens of pixels in dimension. Big requests ask for 100 vector features or images 500 pixels in dimension.
+Aligned with Fowler, Hameseder, and Peterson's [24] experimental control showing that response data size affects response time, LandgateAPITest requests "Small" and "Big" responses. Small requests are either for a few features in GML or JSON or an image only a few tens of pixels in dimension. Big requests ask for 100 vector features or images 500 pixels in dimension.
 
-The distribution of their response times are shown in a box and whiskers chart. These charts show the interquartile range of a distribution. 
+The distribution of their response times are shown in a box and whiskers chart. These charts show the interquartile range of a distribution.
 
 The "Big" requests have a similar Q1 to Q3 (interquartile range) to "Small" ones. The lowest values in the whiskers are significantly slower to arrive. Both have a significant number of outliers above the maximum response time whisker.
 
@@ -424,7 +424,7 @@ The results of deploying the LandgateAPITest suite to test SLIP and Landgate's s
 
 The frequency distributions of response times are skewed towards shorter timeframes. Regardless of the dimension studied. For instance for OGC versus Esri, XML versus JSON versus image data, the bulk of response times fell within the same order of magnitude and less than a second. The fact that the result charts need a logarithmic axis for response time to show the interquartile range indicates that Landgate's servers are suitable for the range of mobile situations investigated.
 
-Measurement of response time is useful for determining Park and Ohm's {*Park:2014jp} service and display quality factor. The frequency distribution of response times is an objective measurement which Landgate can use to show improvement of their service delivery.
+Measurement of response time is useful for determining Park and Ohm's [29] service and display quality factor. The frequency distribution of response times is an objective measurement which Landgate can use to show improvement of their service delivery.
 
 As other studies showed, JSON responses are lighter and faster to download. They are thus better suited to mobile devices where data caps and slower mobile networks are real limitations. XML and GML suit situations where strict adherence to schema is critical to process success.
 
@@ -438,11 +438,11 @@ LandgateAPITest discovered only 79 reference check failures. This is, admittedly
 
 According to this work, inconsistent data are delivered only 0.6% of the time. If this finding is extended, it can be assumed that there are few situations where this would be a critical hindrance for a mobile device user.
 
-Reliable and complete response data helps ensure users can orient themselves in the map compared to their real world location, that is Park and Ohm's {*Park:2014jp} perceived locational accuracy. The percentage of responses with failed reference checks is a second metric which demonstrates successful web service data delivery.
+Reliable and complete response data helps ensure users can orient themselves in the map compared to their real world location, that is Park and Ohm's [29] perceived locational accuracy. The percentage of responses with failed reference checks is a second metric which demonstrates successful web service data delivery.
 
 Measurements of response time frequency distribution and percentage of reference check failures are LandgateAPITest's mobile suitability metrics. Improving these metrics should lead to greater mobile map user acceptance of SLIP's services, even though they may not realise where the underlying data originates. Accordingly, greater acceptance leads to a greater intention to make use of the services. Should more users and more application developers make use of SLIP's web services Landgate could well be said to be succeeding in their goal to improve access to spatial information.
 
-The OASIS web service quality standard {Kim:2012wm} calls for calculation of Availability, Accessibility, and Successability (among others). These are predicated on the assumption that the testing device is guaranteed access to the Internet to perform its tests. In other words, the testing device is assumed to be infallible while the tested service is not. This is entirely possible to achieve in controlled conditions, the testing machine simply does not send a request when it is not certain of success, or ignores tests where certain preconditions of controlled experiment are not met. The output then is a percentage of tests where the tester was able to contact the service, the difference from 100% being entirely the fault of the service.
+The OASIS web service quality standard [28] calls for calculation of Availability, Accessibility, and Successability (among others). These are predicated on the assumption that the testing device is guaranteed access to the Internet to perform its tests. In other words, the testing device is assumed to be infallible while the tested service is not. This is entirely possible to achieve in controlled conditions, the testing machine simply does not send a request when it is not certain of success, or ignores tests where certain preconditions of controlled experiment are not met. The output then is a percentage of tests where the tester was able to contact the service, the difference from 100% being entirely the fault of the service.
 
 LandgateAPITest's methodology does not assume as given nor control its connection to the Internet. The application proceeds with a test so long as there is some connectivity, regardless of its reliability. A failed request which timed out (and hence received a "0" response code from the iOS application) could either be the fault of server downtime or lack of a mobile network connection on the device's part.
 
@@ -458,9 +458,9 @@ LandgateAPITest's inability to calculate Successability and related metrics is a
 
 Esri ArcGIS Servers can provision OGC and KML web services alongside their Esri REST services. Landgate has enabled WMS services for their Public ArcGIS MapServers, but not WFS or KML. Doing so would improve interoperability for open source apps such as QGIS at little incremental cost. Older infrastructure could then be decommissioned without reduced service to the community.
 
-Esri JSON is not the same format as the open standard GeoJSON served by GME and OGC endpoints (note, this is not an OGC standard {Reed:2011kt}). The JSON output from Esri endpoints represents the same data as a response from an OGC or GME endpoint but is laid out differently and must be parsed into an in-memory geometry object before the two can be directly compared. Replacing GeoJSON with Esri JSON requires all applications which depend on these endpoints to adapt to the new format.
+Esri JSON is not the same format as the open standard GeoJSON served by GME and OGC endpoints (note, this is not an OGC standard [5]). The JSON output from Esri endpoints represents the same data as a response from an OGC or GME endpoint but is laid out differently and must be parsed into an in-memory geometry object before the two can be directly compared. Replacing GeoJSON with Esri JSON requires all applications which depend on these endpoints to adapt to the new format.
 
-A more recent version of ArcGIS Server (10.4) can supply GeoJSON in response to a Query request {Anonymous:3DxToBXL}. Landgate employs the previous generation ArcGIS Server, 10.3.1 for their production server infrastructure {Anonymous:81mWLEl8}.
+A more recent version of ArcGIS Server (10.4) can supply GeoJSON in response to a Query request [31]. Landgate employs the previous generation ArcGIS Server, 10.3.1 for their production server infrastructure [32].
 
 ## Future Work
 
@@ -496,4 +496,35 @@ This is not the first work to study each of these aspects, as is evident in the 
 
 ## References
 
-{papers2_bibliography}
+[1]	Web Services Glossary: 2004. http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webservice. Accessed: 2015-10-04.
+[2]	Endo, A.T. and Simao, A.S. 2010. A systematic review on formal testing approaches for web services. Brazilian Workshop on Systematic and …. (2010).
+[3]	Palacios, M. et al. 2011. Testing in Service Oriented Architectures with dynamic binding: A mapping study. Information and software technology. 53, 3 (Mar. 2011), 171–189.
+[4]	Castillo, P.A. et al. 2011. SOAP vs REST: Comparing a master-slave GA implementation. arXiv.org.
+[5]	Reed, C. 2011. OGC standards. Advances in Web-based GIS, Mapping Services and Applications. B. Veenendaal, ed. CRC Press. 327–348.
+[6]	Vretanos, P.P.A. 2005. Web Feature Service Implementation Specification.
+[7]	Google Maps Engine: 2014. https://web.archive.org/web/20141014085033/http://www.google.com/work/mapsearth/products/mapsengine.html. Accessed: 2015-09-30.
+[8]	Overview - Google Maps Engine API (Deprecated): 2015. https://developers.google.com/maps-engine/. Accessed: 2015-04-15.
+[9]	ArcGIS for Server Features: http://www.esri.com/software/arcgis/arcgisserver/features. Accessed: 2015-10-03.
+[10]	The ArcGIS REST API: 2015. http://resources.arcgis.com/en/help/arcgis-rest-api/index.html. Accessed: 2015-10-01.
+[11]	State Records Office of Western Australia: 2004. http://aeon.sro.wa.gov.au/Investigator/Details/Agency_Detail.asp?Entity=Global&Search=lands%20and%20surveys&Op=All&Page=1&Id=1576&SearchPage=Global. Accessed: 2015-09-24.
+[12]	Our story - Landgate: 2015. http://www0.landgate.wa.gov.au/about-us/our-story. Accessed: 2015-09-24.
+[13]	A Location Information Strategy for Western Australia: 2012. http://www.walis.wa.gov.au/projects/location-information-strategy-for-wa/locationstrategyassets/LIS%202.0%20November%202012.pdf. Accessed: 2015-04-16.
+[14]	SLIP Future Project: 2014. https://www2.landgate.wa.gov.au/c/document_library/get_file?uuid=18853442-51bf-4a11-9ccc-76a61d891e51&groupId=10136. Accessed: 2015-09-27.
+[15]	SLIP Stream: 2015. http://slip.landgate.wa.gov.au/SiteAssets/Pages/SLIPStream/SLIPStream%20January%202015.pdf. Accessed: 2015-04-16.
+[16]	Google & Esri: http://www.esri.com/landing-pages/products/google-lp. Accessed: 2015-09-27.
+[17]	SLIP Stream: 2015. http://slip.landgate.wa.gov.au/SiteAssets/Pages/SLIPStream/SLIPStream%20July%202015.pdf. Accessed: 2015-08-12.
+[18]	Ioini Nabil, El 2015. Specifications for Web Services Testing: A Systematic Review. (Jun. 2015).
+[19]	Qiu, D. et al. 2015. Regression Testing of Web Service: A Systematic Mapping Study. ACM Computing Surveys (CSUR). 47, 2 (Jan. 2015), 21–46.
+[20]	Tahir, A. et al. 2013. A systematic review on the functional testing of semantic web services. Journal of Systems and Software. 86, 11 (Nov. 2013), 2371–2393.
+[21]	Hamad, H. et al. 2010. Performance Evaluation of RESTful Web Services for Mobile Devices. Int Arab J e-Technol. (2010).
+[22]	Tian, M. et al. 2004. Performance considerations for mobile web services. Computer Communications. 27, 11 (Jul. 2004), 1097–1105.
+[23]	Davis, C.A.J. et al. 2009. OGC Web Map Service implementation challenges for mobile computers. IEEE.
+[24]	Fowler, S. et al. 2012. An Empirical Evaluation of Web System Access for Smartphone Clients. Journal of Networks. 7, 11 (Nov. 2012), 1–15.
+[25]	Nguyen, T.T. et al. 2008. Security and Performance of Mobile XML Web Services. (2008), 261–265.
+[26]	D'Mello, D.A. and Ananthanarayana, V.S. 2010. A Review of Dynamic Web Service Description and Discovery Techniques. (Aug. 2010), 246–251.
+[27]	Oriol, M. et al. 2014. Quality models for web services: A systematic mapping. Information and software technology. 56, 10 (Oct. 2014), 1167–1182.
+[28]	Kim, E. et al. 2012. Web Services Quality Factors Version 1.0.
+[29]	Park, E. and Ohm, J. 2014. Factors influencing users’ employment of mobile map services. Telematics and Informatics. 31, 2 (May 2014), 253–265.
+[30]	iPhone 6s - Technical Specifications: 2016. http://www.apple.com/au/iphone-6s/specs/. Accessed: 2016-04-19.
+[31]	What's new in ArcGIS 10.4.1 for Server—Documentation | ArcGIS for Server: http://server.arcgis.com/en/server/latest/get-started/windows/what-s-new-in-arcgis-for-server.htm. Accessed: 2016-07-11.
+[32]	SLIP Public ArcGIS REST Services Directory: https://services.slip.wa.gov.au/public/rest/services. Accessed: 2016-07-11.
