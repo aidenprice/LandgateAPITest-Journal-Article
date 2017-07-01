@@ -48,7 +48,7 @@ REST services use HTTP/HTTPS as their transport layer [4]. This permits them to 
 
 The Open Geospatial Consortium (OGC) is an international group of industry, government, academic, and community representatives whose aim is to improve business processes through the integration of location data [5].
 
-A Web Map Service (WMS) composes an image file from from server stored vector and raster layers in response to a request in a URL. A Web Feature Service (WFS) returns geographic vector data in GML (Geographic Markup Language, a derivative of XML). It is a more complex and capable service than WMS. If fully deployed, WFS grants external users full create, read, update, and delete (CRUD) access to a geographic database [6].
+A Web Map Service (WMS) composes an image file from server stored vector and raster layers in response to a request in a URL. A Web Feature Service (WFS) returns geographic vector data in GML (Geographic Markup Language, a derivative of XML). It is a more complex and capable service than WMS. If fully deployed, WFS grants external users full create, read, update, and delete (CRUD) access to a geographic database [6].
 
 #### Google Maps Engine
 
@@ -68,8 +68,7 @@ Landgate is the statutory authority given charge of maintaining the state's land
 
 Landgate's role incorporates managing property ownership and transfer records, as well as property valuations to government agencies [12].
 
-![Organisation of Landgate and WALIS](Graphics\Landgate WALIS & SLIP Org Chart.png)
-Figure 1.1 - Organisation of Landgate and WALIS, adapted from Location Information Strategy Program Coordination Team, 2012
+![Organisation of Landgate and WALIS, adapted from Location Information Strategy Program Coordination Team, 2012](Graphics\Landgate WALIS & SLIP Org Chart.png)
 
 The Western Australian Land Information System (WALIS) is a partnership between government agencies, the private sector, academia, and the community. Their aim is to improve access to location information for the betterment of the Western Australian community [13].
 
@@ -165,8 +164,7 @@ Note that 300 series response codes, the resource moved or redirect codes, are n
 
 Immediately upon the test commencing, the device records the current date and time. Similarly, when the test concludes (successfully or otherwise) the device records the current date and time again. The total response time is the difference between these two time values.
 
-![Generalised Workflow Flowchart](Graphics\LandgateAPITest Generalised Workflow V2.png)
-Figure 3.1 - LandgateAPITest generalised workflow
+![LandgateAPITest generalised workflow](Graphics\LandgateAPITest Generalised Workflow V2.png)
 
 After all tests in the queue are complete the device stores all tests, their details and response data to a local database. The mobile app can query this database to display results to the user.
 
@@ -188,8 +186,7 @@ The resultant Vector objects are the basis for all analysis and graphical repres
 
 ### Data Model and Structures
 
-![LandgateAPITest Data Model Class Diagram](Graphics\LandgateAPITest Data Model Class Diagram.png)
-Figure 3.2 - LandgateAPITest data model class diagram
+![LandgateAPITest data model class diagram](Graphics\LandgateAPITest Data Model Class Diagram.png)
 
 A TestMaster encapsulates all tests undertaken in a single user-initiated test. TestMasters also have properties relating to the test device itself which cannot change through the cycle of subtests. The record includes the device type, the version of its operating system and a unique identifier for the device. The device ID is Apple Inc.'s "ID for vendor" a key unique to both the device and the application vendor. This key cannot be traced to a particular device without the application's signed certificate.
 
@@ -211,8 +208,7 @@ Vector objects are the basis for all further analysis in this study. All graphs 
 
 Firing requests at Landgate's endpoints concurrently, rather than synchronously, would give unreliable response time results. An analysis would not be able to determine what proportion of response time was a factor of the device resolving multiple threads of computation. To avoid this complication LandgateAPITest's iOS app uses a state machine architecture. The completion of each test fires an event function causing the application to change state and after that perform different functions.
 
-![State machine UML diagram](Graphics\LandgateAPITest Mobile Application State Diagram.png)
-Figure 3.3 - LandgateAPITest mobile application state machine UML diagram
+![LandgateAPITest mobile application state machine UML diagram](Graphics\LandgateAPITest Mobile Application State Diagram.png)
 
 When the user initiates a test the SingletonTestManager class switches to its prepareForTest state where it checks preconditions and creates a TestMaster object. From there the SingletonTestManager enters a loop; testing location, network, ping time to google.com.au and then testing a Landgate endpoint (an EndpointTest) and back to location. The loop continues until the TestMaster's queue of EndpointTests is exhausted, after which the device writes the TestMaster and all its subtests to its database. Each state performs distinct actions and does not interfere with tests preceding or following as none may start until the earlier test has successfully finished.
 
@@ -263,17 +259,14 @@ There were three theatres of action in the campaign. Each test is mapped in a Le
 The majority of tests took place in Sydney, NSW and its environs. In particular the regular commute over the harbour to the Central Business District, and the roads and freeways to neighbouring cities.
 
 ![Sydney Test Heat Map, basemap tiles copyright OpenStreetMap Contributors](Graphics/Maps/Sydney.png)
-Figure 4.1 - Sydney Test Heat Map, basemap tiles copyright OpenStreetMap Contributors
 
 Several discrete bursts of tests took place in Bathurst, NSW and the highway back and forth to Sydney, NSW. The figure below shows several clusters of tests in the main streets of Bathurst.
 
 ![Bathurst Test Heat Map, basemap tiles copyright OpenStreetMap Contributors](Graphics/Maps/Bathurst.png)
-Figure 4.2 - Bathurst Test Heat Map, basemap tiles copyright OpenStreetMap Contributors
 
 Townsville, QLD was the theatre with the least number of tests, but some interesting mobile situations involving ferry crossings and steep terrain on Magnetic Island.
 
 ![Townsville Test Heat Map, basemap tiles copyright OpenStreetMap Contributors](Graphics/Maps/Townsville.png)
-Figure 4.3 - Townsville Test Heat Map, basemap tiles copyright OpenStreetMap Contributors
 
 ### EndpointTest Successes and Failures
 
@@ -350,8 +343,7 @@ The LandgateAPITest web application produces charts of current data on request t
 
 The various requests are subcategorised by their test name, a general description denoting near identical requests across the three server types. A FeatureByID request returns the same data from all three servers, though it may not be in the same format (GML, Esri JSON, GeoJSON for example). This pie chart was modified to exclude some of the smallest percentage test types to aid reading clarity.
 
-![Percentage of Vectors by test type](Graphics/Charts/Test Name Pie Chart.png)
-Figure 4.4 - Percentage of Vectors by test type N.B. smaller categories removed for clarity
+![Percentage of Vectors by test type N.B. smaller categories removed for clarity](Graphics/Charts/Test Name Pie Chart.png)
 
 Aligned with Fowler, Hameseder, and Peterson's [24] experimental control showing that response data size affects response time, LandgateAPITest requests "Small" and "Big" responses. Small requests are either for a few features in GML or JSON or an image only a few tens of pixels in dimension. Big requests ask for 100 vector features or images 500 pixels in dimension.
 
@@ -360,26 +352,23 @@ The distribution of their response times are shown in a box and whiskers chart. 
 The "Big" requests have a similar Q1 to Q3 (interquartile range) to "Small" ones. The lowest values in the whiskers are significantly slower to arrive. Both have a significant number of outliers above the maximum response time whisker.
 
 ![A subset of test types where the request calls for either a small sized response or a larger one comparing their response times](Graphics/Charts/Response Data Size Category Boxplot.png)
-Figure 4.5 - A subset of test types where the request calls for either a small sized response or a larger one comparing their response times
 
 Spatial servers can filter results by a function of feature attributes, returning features from any location meeting certain criteria of their properties. Features may also be filtered by a spatial function, returning features from a specific location of any attribute value. The response time frequency distributions for four test types which call upon the server to filter results are shown in the box and whiskers chart.
 
-* Feature by ID calls for a single feature with an exactly matching ID
-* Attribute Filter test requests features with a text "location" property containing the word "Curtin"
-* Spatial intersect requests provide an envelope (minimum X, minimum Y, maximum X and maximum Y) covering the Curtin University Bentley campus and request only features intersecting the envelope
-* Distance Filter was only requested from GME servers, returning only the closest feature to a point within Curtin University's Bentley campus. The operation involved sorting the entire table by distance and selecting the closest
+- Feature by ID calls for a single feature with an exactly matching ID
+- Attribute Filter test requests features with a text "location" property containing the word "Curtin"
+- Spatial intersect requests provide an envelope (minimum X, minimum Y, maximum X and maximum Y) covering the Curtin University Bentley campus and request only features intersecting the envelope
+- Distance Filter was only requested from GME servers, returning only the closest feature to a point within Curtin University's Bentley campus. The operation involved sorting the entire table by distance and selecting the closest
 
 The two attribute filters generally show a distribution of response times shorter than the two spatial filters. This should be expected of indexed data subjected to an equality operation. The confidence in this result is not great. Firstly, all have a significant number of high outliers denoting skewed distributions. The spatial filter medians are only 2 to 3 tenths of a second slower than the two attribute filters. The much smaller Distance Filter sample size makes it less worthy of consideration.
 
 ![A subset of test types which call upon the server to limit results by a function comparing the distribution of their response times](Graphics/Charts/Server-side Operation Boxplot.png)
-Figure 4.6 - A subset of test types which call upon the server to limit results by a function comparing the distribution of their response times
 
 JSON response data dominated the requests (49.0%), being the only format available across all three server types. XML's geographic subset, GML (24.1% of requests), is only routinely served by OGC endpoints. Images were not requested as often (26.7%), there being fewer server-side filtering functions available.
 
 The box and whisker chart shows the response time distribution for XML responses is tighter and higher overall than the similar JSON and image request response time distributions. All three have a significant number of outliers in their upper ranges, showing clearly skewed distributions with most requests achieved in short time frames.
 
 ![Response time distribution by response data type](Graphics/Charts/Response Data Type Boxplot.png)
-Figure 4.7 - Response time distribution by response data type
 
 The Esri and OGC portion of the test campaign in March 2016 was more vigorous than the earlier GME part in December 2015. Only 2.5% of all requests were to GME endpoints, the bulk went to OGC (54.4%) and Esri (42.9%) services.
 
@@ -388,14 +377,12 @@ The box and whiskers chart appears to show a clear performance win for the Esri 
 The GME tests fill a broader interquartile range and have fewer outliers. A larger sample set of these requests may have increased confidence in this result.
 
 ![Response time distribution by server type](Graphics/Charts/Server Type Boxplot.png)
-Figure 4.8 - Response time distribution by server type
 
 The tests were almost evenly split between the two HTTP methods favoured by spatial servers; GET (54.7%) and POST (45.3%). The greater proportion of GET requests are partly due to the lack of POST requests created for the GME server and the map tile requests mostly being GET's with key value coding or straight RESTful endpoints.
 
 There was no distinct difference in response time between the two methods.
 
 ![HTTP Method (GET and POST) response time distributions in box plot](Graphics/Charts/HTTP Method Boxplot.png)
-Figure 4.9 - HTTP Method (GET and POST) response time distributions in box plot
 
 An important disparity to note, Esri POST requests required Form-URL-encoded bodies (i.e. content type = application/x-www-form-urlencoded), whereas OGC POST requests were all XML in plain text (content type = text/xml).
 
@@ -404,7 +391,6 @@ An important disparity to note, Esri POST requests required Form-URL-encoded bod
 The test device deployed determined its location through GPS. The Vector object considers the distance between the LocationTest prior to an EndpointTest and the LocationTest afterwards. By comparing each Vector's distance property to its response time, a scatter plot is produced. Then the web application categorises the points by the EndpointTest's success, on device failure or reference check failure.
 
 ![A scatterplot of distance device travelled (metres) versus response time (seconds) for each Vector object](Graphics/Charts/Distance Vs Response Time Scatter.png)
-Figure 4.10 - A scatterplot of distance device travelled (metres) versus response time (seconds) for each Vector object
 
 The green successful tests show a loose trend of increasing response time in line with increasing distance travelled.
 
@@ -496,35 +482,66 @@ This is not the first work to study each of these aspects, as is evident in the 
 
 ## References
 
-[1]	Web Services Glossary: 2004. http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webservice. Accessed: 2015-10-04.
-[2]	Endo, A.T. and Simao, A.S. 2010. A systematic review on formal testing approaches for web services. Brazilian Workshop on Systematic and …. (2010).
-[3]	Palacios, M. et al. 2011. Testing in Service Oriented Architectures with dynamic binding: A mapping study. Information and software technology. 53, 3 (Mar. 2011), 171–189.
-[4]	Castillo, P.A. et al. 2011. SOAP vs REST: Comparing a master-slave GA implementation. arXiv.org.
-[5]	Reed, C. 2011. OGC standards. Advances in Web-based GIS, Mapping Services and Applications. B. Veenendaal, ed. CRC Press. 327–348.
-[6]	Vretanos, P.P.A. 2005. Web Feature Service Implementation Specification.
-[7]	Google Maps Engine: 2014. https://web.archive.org/web/20141014085033/http://www.google.com/work/mapsearth/products/mapsengine.html. Accessed: 2015-09-30.
-[8]	Overview - Google Maps Engine API (Deprecated): 2015. https://developers.google.com/maps-engine/. Accessed: 2015-04-15.
-[9]	ArcGIS for Server Features: http://www.esri.com/software/arcgis/arcgisserver/features. Accessed: 2015-10-03.
-[10]	The ArcGIS REST API: 2015. http://resources.arcgis.com/en/help/arcgis-rest-api/index.html. Accessed: 2015-10-01.
-[11]	State Records Office of Western Australia: 2004. http://aeon.sro.wa.gov.au/Investigator/Details/Agency_Detail.asp?Entity=Global&Search=lands%20and%20surveys&Op=All&Page=1&Id=1576&SearchPage=Global. Accessed: 2015-09-24.
-[12]	Our story - Landgate: 2015. http://www0.landgate.wa.gov.au/about-us/our-story. Accessed: 2015-09-24.
-[13]	A Location Information Strategy for Western Australia: 2012. http://www.walis.wa.gov.au/projects/location-information-strategy-for-wa/locationstrategyassets/LIS%202.0%20November%202012.pdf. Accessed: 2015-04-16.
-[14]	SLIP Future Project: 2014. https://www2.landgate.wa.gov.au/c/document_library/get_file?uuid=18853442-51bf-4a11-9ccc-76a61d891e51&groupId=10136. Accessed: 2015-09-27.
-[15]	SLIP Stream: 2015. http://slip.landgate.wa.gov.au/SiteAssets/Pages/SLIPStream/SLIPStream%20January%202015.pdf. Accessed: 2015-04-16.
-[16]	Google & Esri: http://www.esri.com/landing-pages/products/google-lp. Accessed: 2015-09-27.
-[17]	SLIP Stream: 2015. http://slip.landgate.wa.gov.au/SiteAssets/Pages/SLIPStream/SLIPStream%20July%202015.pdf. Accessed: 2015-08-12.
-[18]	Ioini Nabil, El 2015. Specifications for Web Services Testing: A Systematic Review. (Jun. 2015).
-[19]	Qiu, D. et al. 2015. Regression Testing of Web Service: A Systematic Mapping Study. ACM Computing Surveys (CSUR). 47, 2 (Jan. 2015), 21–46.
-[20]	Tahir, A. et al. 2013. A systematic review on the functional testing of semantic web services. Journal of Systems and Software. 86, 11 (Nov. 2013), 2371–2393.
-[21]	Hamad, H. et al. 2010. Performance Evaluation of RESTful Web Services for Mobile Devices. Int Arab J e-Technol. (2010).
-[22]	Tian, M. et al. 2004. Performance considerations for mobile web services. Computer Communications. 27, 11 (Jul. 2004), 1097–1105.
-[23]	Davis, C.A.J. et al. 2009. OGC Web Map Service implementation challenges for mobile computers. IEEE.
-[24]	Fowler, S. et al. 2012. An Empirical Evaluation of Web System Access for Smartphone Clients. Journal of Networks. 7, 11 (Nov. 2012), 1–15.
-[25]	Nguyen, T.T. et al. 2008. Security and Performance of Mobile XML Web Services. (2008), 261–265.
-[26]	D'Mello, D.A. and Ananthanarayana, V.S. 2010. A Review of Dynamic Web Service Description and Discovery Techniques. (Aug. 2010), 246–251.
-[27]	Oriol, M. et al. 2014. Quality models for web services: A systematic mapping. Information and software technology. 56, 10 (Oct. 2014), 1167–1182.
-[28]	Kim, E. et al. 2012. Web Services Quality Factors Version 1.0.
-[29]	Park, E. and Ohm, J. 2014. Factors influencing users’ employment of mobile map services. Telematics and Informatics. 31, 2 (May 2014), 253–265.
-[30]	iPhone 6s - Technical Specifications: 2016. http://www.apple.com/au/iphone-6s/specs/. Accessed: 2016-04-19.
-[31]	What's new in ArcGIS 10.4.1 for Server—Documentation | ArcGIS for Server: http://server.arcgis.com/en/server/latest/get-started/windows/what-s-new-in-arcgis-for-server.htm. Accessed: 2016-07-11.
-[32]	SLIP Public ArcGIS REST Services Directory: https://services.slip.wa.gov.au/public/rest/services. Accessed: 2016-07-11.
+[9] ANON. ArcGIS for Server Features. Retrieved October 3, 2015 from http://www.esri.com/software/arcgis/arcgisserver/features
+
+[16] ANON. Google & Esri. Retrieved September 27, 2015 from http://www.esri.com/landing-pages/products/google-lp
+
+[7] ANON. Google Maps Engine. (October 2014). Retrieved September 30, 2015 from https://web.archive.org/web/20141014085033/http://www.google.com/work/mapsearth/products/mapsengine.html 2014.
+
+[30] ANON. iPhone 6s - Technical Specifications. (2016). Retrieved April 19, 2016 from http://www.apple.com/au/iphone-6s/specs/ 2016.
+
+[12] ANON. Our story - Landgate. (August 2015). Retrieved September 24, 2015 from http://www0.landgate.wa.gov.au/about-us/our-story 2015.
+
+[8] ANON. Overview - Google Maps Engine API (Deprecated). (February 2015). Retrieved April 15, 2015 from https://developers.google.com/maps-engine/ 2015.
+
+[14] ANON. SLIP Future Project. (2014). Retrieved September 27, 2015 from https://www2.landgate.wa.gov.au/c/document_library/get_file?uuid=18853442-51bf-4a11-9ccc-76a61d891e51&groupId=10136 2014.
+
+[32] ANON. SLIP Public ArcGIS REST Services Directory. Retrieved July 11, 2016 from https://services.slip.wa.gov.au/public/rest/services
+
+[15] ANON. SLIP Stream. (January 2015). Retrieved April 16, 2015 from http://slip.landgate.wa.gov.au/SiteAssets/Pages/SLIPStream/SLIPStream%20January%202015.pdf 2015.
+
+[17] ANON. SLIP Stream. (July 2015). Retrieved August 12, 2015 from http://slip.landgate.wa.gov.au/SiteAssets/Pages/SLIPStream/SLIPStream%20July%202015.pdf 2015.
+
+[11] ANON. State Records Office of Western Australia. (August 2004). Retrieved September 24, 2015 from http://aeon.sro.wa.gov.au/Investigator/Details/Agency_Detail.asp?Entity=Global&Search=lands%20and%20surveys&Op=All&Page=1&Id=1576&SearchPage=Global 2004.
+
+[10] ANON. The ArcGIS REST API. (August 2015). Retrieved October 1, 2015 from http://resources.arcgis.com/en/help/arcgis-rest-api/index.html 2015.
+
+[1] ANON. Web Services Glossary. (February 2004). Retrieved October 4, 2015 from http://www.w3.org/TR/2004/NOTE-ws-gloss-20040211/#webservice 2004.
+
+[31] ANON. What's new in ArcGIS 10.4.1 for Server—Documentation | ArcGIS for Server. Retrieved July 11, 2016 from http://server.arcgis.com/en/server/latest/get-started/windows/what-s-new-in-arcgis-for-server.htm
+
+[4] CASTILLO, P. A., BERNIER, J. L., ARENAS, M. G., MERELO, J. J., and GARCIA-SANCHEZ, P. SOAP vs REST: Comparing a master-slave GA implementation. _arXiv_ cs.NE (May 2011). 2011.
+
+[26] D'MELLO, D. A., and ANANTHANARAYANA, V. S. A Review of Dynamic Web Service Description and Discovery Techniques. In IEEE Computer Society, 246–251. DOI:https://doi.org/10.1109/ICIIC.2010.57 2010.
+
+[23] DAVIS, C. A. J., KIMO, Y. J., and DUARTE-FIGUEIREDO, F. L. P. _OGC Web Map Service implementation challenges for mobile computers_, IEEE. 2009.
+
+[2] ENDO, A. T., and SIMAO, A. S. A systematic review on formal testing approaches for web services. _Brazilian Workshop on Systematic and …_ (2010). 2010.
+
+[24] FOWLER, S., HAMESEDER, K., and PETERSON, A. An Empirical Evaluation of Web System Access for Smartphone Clients. _JNW_ 7, 11 (November 2012), 1–15. DOI:https://doi.org/10.4304/jnw.7.11.1700-1713 2012.
+
+[21] HAMAD, H., SAAD, M., and ABED, R. Performance Evaluation of RESTful Web Services for Mobile Devices. _Int Arab J e-Technol_ (2010). 2010.
+
+[18] IOINI NABIL, EL. Specifications for Web Services Testing: A Systematic Review. In IEEE Computer Society. 2015.
+
+[28] KIM, E., LEE, Y., KIM, Y., PARK, H., KIM, J., MOON, B., YUN, J., and KANG, G. _Web Services Quality Factors Version 1.0_, 2012.
+
+[13] LOCATION INFORMATION STRATEGY PROGRAM COORDINATION TEAM. A Location Information Strategy for Western Australia. (November 2012). Retrieved April 16, 2015 from http://www.walis.wa.gov.au/projects/location-information-strategy-for-wa/locationstrategyassets/LIS%202.0%20November%202012.pdf 2012.
+
+[25] NGUYEN, T. T., JØRSTAD, I., and THANH, D. V. Security and Performance of Mobile XML Web Services. In IEEE, 261–265. DOI:https://doi.org/10.1109/ICNS.2008.41 2008.
+
+[27] ORIOL, M., MARCO, J., and FRANCH, X. Quality models for web services: A systematic mapping. _Information and Software Technology_ 56, 10 (October 2014), 1167–1182. DOI:https://doi.org/10.1016/j.infsof.2014.03.012 2014.
+
+[3] PALACIOS, M., GARCÍA-FANJUL, J., and TUYA, J. Testing in Service Oriented Architectures with dynamic binding: A mapping study. _Information and Software Technology_ 53, 3 (March 2011), 171–189. DOI:https://doi.org/10.1016/j.infsof.2010.11.014 2011.
+
+[29] PARK, E., and OHM, J. Factors influencing users’ employment of mobile map services. _Telematics and Informatics_ 31, 2 (May 2014), 253–265. DOI:https://doi.org/10.1016/j.tele.2013.07.002 2014.
+
+[19] QIU, D., LI, B., JI, S., and LEUNG, H. Regression Testing of Web Service: A Systematic Mapping Study. _ACM Computing Surveys (CSUR)_ 47, 2 (January 2015), 21–46. DOI:https://doi.org/10.1145/2631685 2015.
+
+[5] REED, C. OGC standards. In B. Veenendaal, ed. _Advances in Web-based GIS, Mapping Services and Applications_. Enabling the geospatial web. CRC Press, 327–348. DOI:https://doi.org/10.1201/b11080-26 2011.
+
+[20] TAHIR, A., TOSI, D., and MORASCA, S. A systematic review on the functional testing of semantic web services. _Journal of Systems and Software_ 86, 11 (November 2013), 2371–2393. DOI:https://doi.org/10.1016/j.jss.2013.04.021 2013.
+
+[22] TIAN, M., VOIGT, T., NAUMOWICZ, T., RITTER, H., and SCHILLER, J. Performance considerations for mobile web services. _Computer Communications_ 27, 11 (July 2004), 1097–1105. DOI:https://doi.org/10.1016/j.comcom.2004.01.015 2004.
+
+[6] VRETANOS, P. P. A. _Web Feature Service Implementation Specification_ 1st ed., 2005.

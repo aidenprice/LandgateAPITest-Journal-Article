@@ -36,19 +36,19 @@ The testing suite provides a measurement set as its outputs, frequency distribut
 
 Web services enable interaction between computer systems over a network {Anonymous:bRhwymPh}. One system may call on another to provide data or a service without requiring a human user to mediate the interaction. Mobile devices have limited processing power and storage available, so off-device storage and processing empowers on-device applications.
 
-Service Oriented Architectures (SOA) is a principle of software design that aims to compose a software product from loosely coupled, and hence replaceable, components {Endo:2010wf}. Designers commonly employ this pattern as a method for distributed computing {Palacios:2011eo}. 
+Service Oriented Architectures (SOA) is a principle of software design that aims to compose a software product from loosely coupled, and hence replaceable, components {Endo:2010wf}. Designers commonly employ this pattern as a method for distributed computing {Palacios:2011eo}.
 
 Representational State Transfer (REST) services are easy to develop and consume {Castillo:2011ve}. The adoption of RESTful services has led to an explosion of data available on the web, particularly with mobile applications in mind as end consumers.
 
-REST services use HTTP/HTTPS as their transport layer {Castillo:2011ve}. This permits them to employ the standard HTTP response codes to indicate the success of a request. Briefly, such codes include the 200 series for success, 300 codes for resources moved elsewhere, 400 series for bad requests from the client and the 500 series for server errors. 
+REST services use HTTP/HTTPS as their transport layer {Castillo:2011ve}. This permits them to employ the standard HTTP response codes to indicate the success of a request. Briefly, such codes include the 200 series for success, 300 codes for resources moved elsewhere, 400 series for bad requests from the client and the 500 series for server errors.
 
 ### Spatial Web Services
 
 #### Open Geospatial Consortium Web Map Service and Web Feature Service
 
-The Open Geospatial Consortium (OGC) is an international group of industry, government, academic, and community representatives whose aim is to improve business processes through the integration of location data {Reed:2011kt}. 
+The Open Geospatial Consortium (OGC) is an international group of industry, government, academic, and community representatives whose aim is to improve business processes through the integration of location data {Reed:2011kt}.
 
-A Web Map Service (WMS) composes an image file from from server stored vector and raster layers in response to a request in a URL. A Web Feature Service (WFS) returns geographic vector data in GML (Geographic Markup Language, a derivative of XML). It is a more complex and capable service than WMS. If fully deployed, WFS grants external users full create, read, update, and delete (CRUD) access to a geographic database {Vretanos:2005ut}.
+A Web Map Service (WMS) composes an image file from server stored vector and raster layers in response to a request in a URL. A Web Feature Service (WFS) returns geographic vector data in GML (Geographic Markup Language, a derivative of XML). It is a more complex and capable service than WMS. If fully deployed, WFS grants external users full create, read, update, and delete (CRUD) access to a geographic database {Vretanos:2005ut}.
 
 #### Google Maps Engine
 
@@ -68,8 +68,7 @@ Landgate is the statutory authority given charge of maintaining the state's land
 
 Landgate's role incorporates managing property ownership and transfer records, as well as property valuations to government agencies {Anonymous:x1iQOCOB}.
 
-![Organisation of Landgate and WALIS](Graphics\Landgate WALIS & SLIP Org Chart.png)
-Figure 1.1 - Organisation of Landgate and WALIS, adapted from Location Information Strategy Program Coordination Team, 2012
+![Organisation of Landgate and WALIS, adapted from Location Information Strategy Program Coordination Team, 2012](Graphics\Landgate WALIS & SLIP Org Chart.png)
 
 The Western Australian Land Information System (WALIS) is a partnership between government agencies, the private sector, academia, and the community. Their aim is to improve access to location information for the betterment of the Western Australian community {LocationInformationStrategyProgramCoordinationTeam:2012te}.
 
@@ -113,12 +112,12 @@ Orion, Marco, and French {*Oriol:2014kq} reviewed the state of the art in qualit
 
 The OASIS Web Services Quality Factors {Kim:2012wm} defined six quality factors with 28 subcategories.
 
-    1.    Business Value Quality - the value arising from using a web service as compared to the cost.
-    2.    Service Level Measurement Quality - the service responsiveness from a client's point of view, including time and success criteria.
-    3.    Interoperability Quality - the degree to which a service conforms to appropriate standards.
-    4.    Business Processing Quality - the service's reliability for business use considering transmission integrity and integration with other processes.
-    5.    Manageability Quality - management processes to ensure web service quality.
-    6.    Security Quality - the service's ability to prevent intrusion, interception or destruction of the service itself or its messages.
+1. Business Value Quality - the value arising from using a web service as compared to the cost.
+1. Service Level Measurement Quality - the service responsiveness from a client's point of view, including time and success criteria.
+1. Interoperability Quality - the degree to which a service conforms to appropriate standards.
+1. Business Processing Quality - the service's reliability for business use considering transmission integrity and integration with other processes.
+1. Manageability Quality - management processes to ensure web service quality.
+1. Security Quality - the service's ability to prevent intrusion, interception or destruction of the service itself or its messages.
 
 Taken all together these represent all factors that affect a client's decision to consume a web service.
 
@@ -126,11 +125,11 @@ The scope of this study is limited to those aspects of Landgate's service that a
 
 Only Service Level Measurement Quality is within the purview of this study. Its sub-categories include:
 
-    1.    Response Time - the time interval between the transmission of a request and the receipt of a response. The total time is composed of the time taken for the client to compose the request and decompose the response plus the network transmission time to and from the server plus the time taken for the server to process the request and formulate a response.
-    2.    Maximum Throughput - the maximum number of requests a service can reliably respond to in a unit of time.
-    3.    Availability - the proportion of time the server is operational, the complement of service downtime per measured time.
-    4.    Accessibility - the probability of the web service can be reached when the system is operational, quantified as the number of received acknowledgement messages divided by the total number of requests.
-    5.    Successability - the probability of receiving a successful response to a web service request, the number of responses divided by the number of requests.
+1. Response Time - the time interval between the transmission of a request and the receipt of a response. The total time is composed of the time taken for the client to compose the request and decompose the response plus the network transmission time to and from the server plus the time taken for the server to process the request and formulate a response.
+1. Maximum Throughput - the maximum number of requests a service can reliably respond to in a unit of time.
+1. Availability - the proportion of time the server is operational, the complement of service downtime per measured time.
+1. Accessibility - the probability of the web service can be reached when the system is operational, quantified as the number of received acknowledgement messages divided by the total number of requests.
+1. Successability - the probability of receiving a successful response to a web service request, the number of responses divided by the number of requests.
 
 This research proposes to track a subset of these factors through a series of frequent but irregularly timed tests from a mobile device deployed in situations common to the mobile network milieu.
 
@@ -153,9 +152,9 @@ The mobile application user chooses to initiate a test against the Landgate serv
 Testing proceeds in a cycle:
 
 1. First, a LocationTest determines the device's latitude and longitude
-2. A NetworkTest queries the device's connection to the mobile network
-3. A PingTest checks the ping time to a well-known endpoint other than Landgate
-4. Then the device sends one of the pre-ordered requests to Landgate's servers and captures the response data in an EndpointTest.
+1. A NetworkTest queries the device's connection to the mobile network
+1. A PingTest checks the ping time to a well-known endpoint other than Landgate
+1. Then the device sends one of the pre-ordered requests to Landgate's servers and captures the response data in an EndpointTest.
 
 The cycle repeats until there are no more EndpointTests in the queue.
 
@@ -165,8 +164,7 @@ Note that 300 series response codes, the resource moved or redirect codes, are n
 
 Immediately upon the test commencing, the device records the current date and time. Similarly, when the test concludes (successfully or otherwise) the device records the current date and time again. The total response time is the difference between these two time values.
 
-![Generalised Workflow Flowchart](Graphics\LandgateAPITest Generalised Workflow V2.png)
-Figure 3.1 - LandgateAPITest generalised workflow
+![LandgateAPITest generalised workflow](Graphics\LandgateAPITest Generalised Workflow V2.png)
 
 After all tests in the queue are complete the device stores all tests, their details and response data to a local database. The mobile app can query this database to display results to the user.
 
@@ -188,8 +186,7 @@ The resultant Vector objects are the basis for all analysis and graphical repres
 
 ### Data Model and Structures
 
-![LandgateAPITest Data Model Class Diagram](Graphics\LandgateAPITest Data Model Class Diagram.png)
-Figure 3.2 - LandgateAPITest data model class diagram
+![LandgateAPITest data model class diagram](Graphics\LandgateAPITest Data Model Class Diagram.png)
 
 A TestMaster encapsulates all tests undertaken in a single user-initiated test. TestMasters also have properties relating to the test device itself which cannot change through the cycle of subtests. The record includes the device type, the version of its operating system and a unique identifier for the device. The device ID is Apple Inc.'s "ID for vendor" a key unique to both the device and the application vendor. This key cannot be traced to a particular device without the application's signed certificate.
 
@@ -199,7 +196,7 @@ A LocationTest acquires a latitude and longitude value in the WGS84 coordinate r
 
 A NetworkTest queries the iOS device for the properties of its network connection. Each NetworkTest records the mobile network provider (called carrier in mobile device parlance) and the class of the mobile network (for example, EDGE, HSDPA, LTE).
 
-As LandgateAPITest cannot directly test network connection speed, a proxy is taken in its place. A PingTest sends a HEAD request to www.google.com.au and measures the time until it receives a response. 
+As LandgateAPITest cannot directly test network connection speed, a proxy is taken in its place. A PingTest sends a HEAD request to www.google.com.au and measures the time until it receives a response.
 
 ReferenceObjects hold the correct response data from the Landgate server for each request. These exemplar responses were requested and stored on the 5th of April, 2016. This postdates GME's replacement. References for GME requests were stored in April 2016 from the first test responses in December 2015. Dynamic parts of responses were excluded from the final ReferenceObject, for example, any date or time value that changes between requests.
 
@@ -211,8 +208,7 @@ Vector objects are the basis for all further analysis in this study. All graphs 
 
 Firing requests at Landgate's endpoints concurrently, rather than synchronously, would give unreliable response time results. An analysis would not be able to determine what proportion of response time was a factor of the device resolving multiple threads of computation. To avoid this complication LandgateAPITest's iOS app uses a state machine architecture. The completion of each test fires an event function causing the application to change state and after that perform different functions.
 
-![State machine UML diagram](Graphics\LandgateAPITest Mobile Application State Diagram.png)
-Figure 3.3 - LandgateAPITest mobile application state machine UML diagram
+![LandgateAPITest mobile application state machine UML diagram](Graphics\LandgateAPITest Mobile Application State Diagram.png)
 
 When the user initiates a test the SingletonTestManager class switches to its prepareForTest state where it checks preconditions and creates a TestMaster object. From there the SingletonTestManager enters a loop; testing location, network, ping time to google.com.au and then testing a Landgate endpoint (an EndpointTest) and back to location. The loop continues until the TestMaster's queue of EndpointTests is exhausted, after which the device writes the TestMaster and all its subtests to its database. Each state performs distinct actions and does not interfere with tests preceding or following as none may start until the earlier test has successfully finished.
 
@@ -263,17 +259,14 @@ There were three theatres of action in the campaign. Each test is mapped in a Le
 The majority of tests took place in Sydney, NSW and its environs. In particular the regular commute over the harbour to the Central Business District, and the roads and freeways to neighbouring cities.
 
 ![Sydney Test Heat Map, basemap tiles copyright OpenStreetMap Contributors](Graphics/Maps/Sydney.png)
-Figure 4.1 - Sydney Test Heat Map, basemap tiles copyright OpenStreetMap Contributors
 
 Several discrete bursts of tests took place in Bathurst, NSW and the highway back and forth to Sydney, NSW. The figure below shows several clusters of tests in the main streets of Bathurst.
 
 ![Bathurst Test Heat Map, basemap tiles copyright OpenStreetMap Contributors](Graphics/Maps/Bathurst.png)
-Figure 4.2 - Bathurst Test Heat Map, basemap tiles copyright OpenStreetMap Contributors
 
 Townsville, QLD was the theatre with the least number of tests, but some interesting mobile situations involving ferry crossings and steep terrain on Magnetic Island.
 
 ![Townsville Test Heat Map, basemap tiles copyright OpenStreetMap Contributors](Graphics/Maps/Townsville.png)
-Figure 4.3 - Townsville Test Heat Map, basemap tiles copyright OpenStreetMap Contributors
 
 ### EndpointTest Successes and Failures
 
@@ -350,36 +343,32 @@ The LandgateAPITest web application produces charts of current data on request t
 
 The various requests are subcategorised by their test name, a general description denoting near identical requests across the three server types. A FeatureByID request returns the same data from all three servers, though it may not be in the same format (GML, Esri JSON, GeoJSON for example). This pie chart was modified to exclude some of the smallest percentage test types to aid reading clarity.
 
-![Percentage of Vectors by test type](Graphics/Charts/Test Name Pie Chart.png)
-Figure 4.4 - Percentage of Vectors by test type N.B. smaller categories removed for clarity
+![Percentage of Vectors by test type N.B. smaller categories removed for clarity](Graphics/Charts/Test Name Pie Chart.png)
 
 Aligned with Fowler, Hameseder, and Peterson's {*Fowler:2012bn} experimental control showing that response data size affects response time, LandgateAPITest requests "Small" and "Big" responses. Small requests are either for a few features in GML or JSON or an image only a few tens of pixels in dimension. Big requests ask for 100 vector features or images 500 pixels in dimension.
 
-The distribution of their response times are shown in a box and whiskers chart. These charts show the interquartile range of a distribution. 
+The distribution of their response times are shown in a box and whiskers chart. These charts show the interquartile range of a distribution.
 
 The "Big" requests have a similar Q1 to Q3 (interquartile range) to "Small" ones. The lowest values in the whiskers are significantly slower to arrive. Both have a significant number of outliers above the maximum response time whisker.
 
 ![A subset of test types where the request calls for either a small sized response or a larger one comparing their response times](Graphics/Charts/Response Data Size Category Boxplot.png)
-Figure 4.5 - A subset of test types where the request calls for either a small sized response or a larger one comparing their response times
 
 Spatial servers can filter results by a function of feature attributes, returning features from any location meeting certain criteria of their properties. Features may also be filtered by a spatial function, returning features from a specific location of any attribute value. The response time frequency distributions for four test types which call upon the server to filter results are shown in the box and whiskers chart.
 
-* Feature by ID calls for a single feature with an exactly matching ID
-* Attribute Filter test requests features with a text "location" property containing the word "Curtin"
-* Spatial intersect requests provide an envelope (minimum X, minimum Y, maximum X and maximum Y) covering the Curtin University Bentley campus and request only features intersecting the envelope
-* Distance Filter was only requested from GME servers, returning only the closest feature to a point within Curtin University's Bentley campus. The operation involved sorting the entire table by distance and selecting the closest
+- Feature by ID calls for a single feature with an exactly matching ID
+- Attribute Filter test requests features with a text "location" property containing the word "Curtin"
+- Spatial intersect requests provide an envelope (minimum X, minimum Y, maximum X and maximum Y) covering the Curtin University Bentley campus and request only features intersecting the envelope
+- Distance Filter was only requested from GME servers, returning only the closest feature to a point within Curtin University's Bentley campus. The operation involved sorting the entire table by distance and selecting the closest
 
 The two attribute filters generally show a distribution of response times shorter than the two spatial filters. This should be expected of indexed data subjected to an equality operation. The confidence in this result is not great. Firstly, all have a significant number of high outliers denoting skewed distributions. The spatial filter medians are only 2 to 3 tenths of a second slower than the two attribute filters. The much smaller Distance Filter sample size makes it less worthy of consideration.
 
 ![A subset of test types which call upon the server to limit results by a function comparing the distribution of their response times](Graphics/Charts/Server-side Operation Boxplot.png)
-Figure 4.6 - A subset of test types which call upon the server to limit results by a function comparing the distribution of their response times
 
 JSON response data dominated the requests (49.0%), being the only format available across all three server types. XML's geographic subset, GML (24.1% of requests), is only routinely served by OGC endpoints. Images were not requested as often (26.7%), there being fewer server-side filtering functions available.
 
 The box and whisker chart shows the response time distribution for XML responses is tighter and higher overall than the similar JSON and image request response time distributions. All three have a significant number of outliers in their upper ranges, showing clearly skewed distributions with most requests achieved in short time frames.
 
 ![Response time distribution by response data type](Graphics/Charts/Response Data Type Boxplot.png)
-Figure 4.7 - Response time distribution by response data type
 
 The Esri and OGC portion of the test campaign in March 2016 was more vigorous than the earlier GME part in December 2015. Only 2.5% of all requests were to GME endpoints, the bulk went to OGC (54.4%) and Esri (42.9%) services.
 
@@ -388,14 +377,12 @@ The box and whiskers chart appears to show a clear performance win for the Esri 
 The GME tests fill a broader interquartile range and have fewer outliers. A larger sample set of these requests may have increased confidence in this result.
 
 ![Response time distribution by server type](Graphics/Charts/Server Type Boxplot.png)
-Figure 4.8 - Response time distribution by server type
 
 The tests were almost evenly split between the two HTTP methods favoured by spatial servers; GET (54.7%) and POST (45.3%). The greater proportion of GET requests are partly due to the lack of POST requests created for the GME server and the map tile requests mostly being GET's with key value coding or straight RESTful endpoints.
 
 There was no distinct difference in response time between the two methods.
 
 ![HTTP Method (GET and POST) response time distributions in box plot](Graphics/Charts/HTTP Method Boxplot.png)
-Figure 4.9 - HTTP Method (GET and POST) response time distributions in box plot
 
 An important disparity to note, Esri POST requests required Form-URL-encoded bodies (i.e. content type = application/x-www-form-urlencoded), whereas OGC POST requests were all XML in plain text (content type = text/xml).
 
@@ -404,7 +391,6 @@ An important disparity to note, Esri POST requests required Form-URL-encoded bod
 The test device deployed determined its location through GPS. The Vector object considers the distance between the LocationTest prior to an EndpointTest and the LocationTest afterwards. By comparing each Vector's distance property to its response time, a scatter plot is produced. Then the web application categorises the points by the EndpointTest's success, on device failure or reference check failure.
 
 ![A scatterplot of distance device travelled (metres) versus response time (seconds) for each Vector object](Graphics/Charts/Distance Vs Response Time Scatter.png)
-Figure 4.10 - A scatterplot of distance device travelled (metres) versus response time (seconds) for each Vector object
 
 The green successful tests show a loose trend of increasing response time in line with increasing distance travelled.
 
